@@ -1,4 +1,4 @@
-namespace Project.Runtime
+namespace Project.Runtime.Robot
 {
     /// <summary>
     /// Enumeration representing the various states a robot can be in.

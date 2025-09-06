@@ -197,6 +197,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119193196}
   m_CullTransparentMesh: 1
+--- !u!1 &145551249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 145551250}
+  m_Layer: 0
+  m_Name: ===Manager===
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &145551250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145551249}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1182.8342, y: 502.6782, z: -5.9614553}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 630421256}
+  - {fileID: 1052698533}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &243631359
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,7 +535,7 @@ GameObject:
   - component: {fileID: 399779344}
   - component: {fileID: 399779343}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: ===Canvas===
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1142,7 +1175,7 @@ GameObject:
   - component: {fileID: 630421256}
   - component: {fileID: 630421255}
   m_Layer: 0
-  m_Name: 'TaskBoard '
+  m_Name: '##TaskBoard##'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1160,6 +1193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e17b581e7a9633e4ea5306913d36afa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableDebugLogging: 1
+  taskCleanupDelay: 0.1
   activeTasks: []
 --- !u!4 &630421256
 Transform:
@@ -1169,12 +1204,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630421254}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1031.2942, y: 288.28427, z: -9.025744}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -151.54004, y: -214.39392, z: -3.064289}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 145551250}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &676954469
 GameObject:
@@ -1583,6 +1618,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000646794}
   m_CullTransparentMesh: 1
+--- !u!1 &1052698531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1052698533}
+  - component: {fileID: 1052698532}
+  m_Layer: 0
+  m_Name: '##EntityFactory##'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1052698532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052698531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8a6430023eea948862d7bc9dfdb382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotPrefab: {fileID: 1488376077766519024, guid: 607076ff4cbaf2f4bb1adad59bc26960, type: 3}
+  taskPrefab: {fileID: 3986019907487027507, guid: 39627c72dbab7cc43a522474d496674e, type: 3}
+  enableDebugLogging: 1
+--- !u!4 &1052698533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052698531}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1182.8342, y: -502.6782, z: 5.9614553}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 145551250}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1057377375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,12 +1830,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskTypeDropdown: {fileID: 1915758340}
-  taskInstancePrefab: {fileID: 3986019907487027507, guid: 39627c72dbab7cc43a522474d496674e, type: 3}
+  tasksContainer: {fileID: 1390060167}
   availableTaskTypes:
   - {fileID: 11400000, guid: f1b9064ffae10c24fa69c69c9209d80c, type: 2}
   - {fileID: 11400000, guid: 68a9ccbb7c42a174a9d2ef4ca1630b95, type: 2}
   - {fileID: 11400000, guid: 14957d27854c2604eabdcef72948c20e, type: 2}
-  tasksContainer: {fileID: 1390060167}
+  enableDebugLogging: 1
 --- !u!1 &1128312993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2562,7 +2644,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -48.092056}
+  m_AnchoredPosition: {x: 0, y: -48.09204}
   m_SizeDelta: {x: -0.000061035, y: -96.1849}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1390060169
@@ -2828,12 +2910,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRobotButton: {fileID: 1570981914}
   robotTypeDropdown: {fileID: 1787782951}
-  robotUIPrefab: {fileID: 1488376077766519024, guid: 607076ff4cbaf2f4bb1adad59bc26960, type: 3}
+  robotsContainer: {fileID: 1390060167}
   availableRobotTypes:
   - {fileID: 11400000, guid: b8268af671c087145bf67ae8ad42ad7b, type: 2}
   - {fileID: 11400000, guid: 6a694d627f0d8a24499116ac755d8b0d, type: 2}
   - {fileID: 11400000, guid: cdd66dc5d2db2194a976d48ebde0f986, type: 2}
-  robotsContainer: {fileID: 1390060167}
+  enableDebugLogging: 1
+  robotsPerRow: 4
+  robotSpacing: 120
+  rowSpacing: 80
+  spawnOffset: {x: 20, y: -20}
 --- !u!114 &1524496834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3392,7 +3478,7 @@ GameObject:
   - component: {fileID: 2053345019}
   - component: {fileID: 2053345018}
   m_Layer: 5
-  m_Name: Canvas Tasks
+  m_Name: ===Canvas Jobs===
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3486,7 +3572,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 630421256}
   - {fileID: 399779346}
   - {fileID: 2053345021}
+  - {fileID: 145551250}
   - {fileID: 243631362}
