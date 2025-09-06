@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a10b2a455381c4da2c5fecbf915fb4, type: 3}
+  m_Name: Miner
+  m_EditorClassIdentifier: 
+  robotName: Miner
+  sprite: {fileID: -4652299, guid: 95e1597f904db8240ba54c9f54dac2bb, type: 3}
+  moveSpeed: 3
+  preferredTasks:
+  - {fileID: 11400000, guid: 68a9ccbb7c42a174a9d2ef4ca1630b95, type: 2}
+  hoverAmplitude: 0.7
+  hoverFrequency: 5

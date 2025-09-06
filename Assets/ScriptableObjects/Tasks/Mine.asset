@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6a817f5ccc83b4a99139deaa947d5d, type: 3}
+  m_Name: Mine
+  m_EditorClassIdentifier: 
+  displayName: Mining
+  baseDuration: 12
+  icon: {fileID: 1824361110, guid: ccb87b5bc2e4b5944b864141cfa1ade6, type: 3}
+  hudColor: {r: 0.6603774, g: 0.22739409, b: 0.22739409, a: 1}
+  categoryTag: General
